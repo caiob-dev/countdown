@@ -26,12 +26,12 @@
 
 html {
     background: var(--main-bg-color);
-    min-height: 100vh;
+    min-height: 100%;
     font-size: 10px;
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100%;
     background: url("../img/pattern.png");
     background-size: cover;
     background-repeat: no-repeat;
