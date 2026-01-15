@@ -24,14 +24,20 @@
     max-width: 100%;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 html {
     background: var(--main-bg-color);
-    min-height: 100%;
     font-size: 10px;
 }
 
 body {
-    min-height: 100%;
+    min-height: 100dvh;
+    min-height: 100vh;
     background: url("../img/pattern.png");
     background-size: cover;
     background-repeat: no-repeat;
