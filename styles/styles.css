@@ -1,0 +1,152 @@
+:root {
+    --color-primary: #123456;
+    --color-secondary: #FFF;
+    --azul-royal: #144480;
+    --fundo-card-timer: rgba(20, 68, 128, 0.30);
+    --lils: #B872FF;
+    --linear-botes: linear-gradient(180deg, #B872FF 0%, #144480 100%);
+}
+
+[data-contexto="porto-seguro"] {
+    --main-bg-color: linear-gradient(180deg, #0F725C 0%, #041832 48.44%, #01080E 100%);
+}
+
+[data-contexto="lencois"] {
+    --main-bg-color: linear-gradient(180deg, #a55dec 0%, #041832 48.44%, #01080E 100%);
+}
+
+[data-contexto="sao-paulo"] {
+    --main-bg-color: linear-gradient(180deg,  #1875E9  0%, #041832 48.44%, #01080E 100%);
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    background: var(--main-bg-color);
+    min-height: 100vh;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    background: url("../img/pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Unbounded', cursive;
+}
+
+.app__logo-figure {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.app__image {
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+.app__section-banner-container {
+    width: 100rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.app__title {
+    color: var(--color-secondary);
+    font-size: 5rem;
+    text-align: center;
+}
+
+.app__section-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.app__card {
+    width: 59rem;
+    max-width: 90%;
+    background-color: var(--fundo-card-timer);
+    margin: 8rem 0;
+    padding: 2.4rem;
+    border: 0.2rem solid var(--azul-royal);
+    border-radius: 3.2rem;
+}
+
+.app__card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.app__card-button.active {
+    font-weight: 600;
+    border-radius: 0.8rem;
+    background: var(--azul-royal);
+}
+
+.app__card-list-item {
+    list-style-type: none;
+}
+
+.app__card-button {
+    background: none;
+    color: var(--color-secondary);
+    padding: 0.8rem;
+    font-size: 1.8rem;
+    font-family: Montserrat;
+    cursor: pointer;
+    border: none;
+    outline: inherit;
+    line-height: 150%;
+}
+
+.timer {
+    font-family: 'Unbounded';
+    font-size: 4.5rem;
+    color: var(--color-secondary);
+    font-weight: 700;
+    margin: 2.2rem;
+    text-align: center;
+}
+
+.footer__text {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .app__section-banner-container {
+        width: 48rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .app__section-banner-container {
+        width: 32rem;
+        justify-content: center;
+    }
+
+    .app__title {
+        font-size: 3rem;
+    }
+
+    .timer {
+        font-size: 3.5rem;
+    }
+}
